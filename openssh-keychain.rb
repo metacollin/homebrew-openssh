@@ -12,7 +12,7 @@ class OpensshKeychain< Formula
 
   def patches
     p = []
-    p << 'https://gist.github.com/metacollin/5559308/raw/96adc2d51c722a799de95e2e9f391bba24bcf371/openssh-6.2p1.patch' if build.include? 'with-keychain-support'
+    p << 'https://gist.github.com/metacollin/5559308/raw/96adc2d51c722a799de95e2e9f391bba24bcf371/openssh-6.2p1.patch'
     p
   end
 
@@ -53,4 +53,5 @@ class OpensshKeychain< Formula
       EOS
     end
   end
+end
 
