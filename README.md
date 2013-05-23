@@ -12,20 +12,19 @@ If you are here, you probably already know why you want ECDSA support, but if no
 
 To use, simply do:
 
-brew tap metacollin/openssh
-
-brew install openssh-keychain 
+    brew tap metacollin/openssh
+    brew install openssh-keychain 
 
 once this completes, do:
 
-sudo nano /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist    
+    sudo nano /System/Library/LaunchAgents/org.openbsd.ssh-agent.plist    
 
 locate the line (line 9 for me) that reads:
 
-<string>/usr/bin/ssh-agent</string>
+    <string>/usr/bin/ssh-agent</string>
 
 and change it so it reads:
 
-<string>/usr/local/bin/ssh-agent</string>
+    <string>/usr/local/bin/ssh-agent</string>
 
 Save, launch a new terminal session, and you should be good to go.  You might need to logout and log back in, but it just worked for me. 
