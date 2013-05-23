@@ -1,6 +1,6 @@
 require 'formula'
 
-class Openssh < Formula
+class Openssh-Keychain< Formula
   homepage 'http://www.openssh.com/'
   url 'http://ftp5.usa.openbsd.org/pub/OpenBSD/OpenSSH/portable/openssh-6.2p1.tar.gz'
   version '6.2p1'
