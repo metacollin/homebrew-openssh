@@ -27,4 +27,15 @@ and change it so it reads:
 
     <string>/usr/local/bin/ssh-agent</string>
 
+
+Finally, add these lines to your .profile:
+
+    eval $(ssh-agent)
+    function cleanup {
+        echo "Killing SSH-Agent"
+        kill -9 $SSH_AGENT_PID
+    }
+    trap cleanup EXIT
+    
+
 Save, launch a new terminal session, and you should be good to go.  You might need to logout and log back in, but it just worked for me. 
