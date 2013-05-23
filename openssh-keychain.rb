@@ -53,5 +53,4 @@ class OpensshKeychain< Formula
       EOS
     end
   end
-end
 
